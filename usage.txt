@@ -1,0 +1,14 @@
+install node JS
+install vue js using NPM or yarn 
+
+npm install -g @vue/cli
+vue create <projectname>
+cd <projectname>
+npm run serve
+
+
+
+yarn global add @vue/cli
+vue create <projectname>
+cd <projectname>
+yarn serve
