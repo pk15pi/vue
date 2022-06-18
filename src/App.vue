@@ -1,16 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>every app is registered in App.vue</div>
+  <div>
+    <table>
+      <tr>
+        <td> <HelloWorld msg="Welcome to Your Vue.js App"/></td>
+        <td> <ifelse /> </td>
+        <td><list/></td>
+      </tr>
+    </table>
+
+  </div>
+  
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import ifelse from './components/ifelse.vue'
+import List from './components/list.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    HelloWorld,
+    ifelse,
+    List
+}
 }
 </script>
 
@@ -22,5 +36,11 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+
+
+.thalign {
+  align-self: auto;
 }
 </style>
