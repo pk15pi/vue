@@ -12,3 +12,11 @@ yarn global add @vue/cli
 vue create <projectname>
 cd <projectname>
 yarn serve
+
+
+veu create <appname>
+
+## install dependencies from package.json
+npm install --only=dev
+or just run 
+npm install
