@@ -2,10 +2,15 @@
   <div class="underline">every app is registered in App.vue</div>
   <div>
     <table class="table">
-      <tr>
+      <!-- <tr class="table">
         <td> <HelloWorld msg="Welcome to Your Vue.js App"/></td>
         <td> <ifelse /> </td>
         <td><list/></td>
+      </tr> -->
+      <tr>
+        <td> <Methods/></td>
+        <td> <EventListeners/></td>
+        <td> <Forms/></td>
       </tr>
     </table>
 
@@ -14,16 +19,22 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import ifelse from './components/ifelse.vue'
-import List from './components/list.vue'
+// import HelloWorld from './components/HelloWorld.vue'
+// import ifelse from './components/ifelse.vue'
+// import List from './components/list.vue'
+import Methods from './components/methods.vue'
+import EventListeners from './components/eventListeners.vue'
+import Forms from './components/forms.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    ifelse,
-    List
+    // HelloWorld,
+    // ifelse,
+    // List,
+    Methods,
+    EventListeners,
+    Forms
 }
 }
 </script>
@@ -43,7 +54,7 @@ export default {
 }
 
 .table{
-  border: 1rem;
+  border: red, solid, 2px;
 }
 
 .thalign {
