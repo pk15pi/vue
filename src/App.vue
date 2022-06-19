@@ -1,7 +1,7 @@
 <template>
-  <div>every app is registered in App.vue</div>
+  <div class="underline">every app is registered in App.vue</div>
   <div>
-    <table>
+    <table class="table">
       <tr>
         <td> <HelloWorld msg="Welcome to Your Vue.js App"/></td>
         <td> <ifelse /> </td>
@@ -38,7 +38,13 @@ export default {
   margin-top: 60px;
 }
 
+.underline {
+  text-decoration: underline;
+}
 
+.table{
+  border: 1rem;
+}
 
 .thalign {
   align-self: auto;
