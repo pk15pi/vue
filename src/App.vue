@@ -8,9 +8,23 @@
         <td><list/></td>
       </tr> -->
       <tr>
-        <td> <Methods/></td>
-        <td> <EventListeners/></td>
-        <td> <Forms/></td>
+        <!-- <td> <Methods/></td> -->
+        <!-- <td> <EventListeners/></td> -->
+        <!-- <td> <Forms/></td> -->
+      </tr>
+      <tr>
+        <!-- <td> <Modifiers/></td> -->
+        <!-- <td> <dynamicComp/></td> -->
+        <!-- <td> <Parent/> </td> -->
+      </tr>
+      <tr>
+        <!-- <td> <PostList/></td> -->
+        <!-- <td> <TempRef/></td> -->
+        <!-- <td> <MyComp1/></td> -->
+      </tr>
+      <tr>
+        <!-- <td> <MyComp2/></td> -->
+        <td> <MainAppVuetify /></td>
       </tr>
     </table>
 
@@ -19,12 +33,23 @@
 </template>
 
 <script>
+import 'vuetify/dist/vuetify.min.css'
+
 // import HelloWorld from './components/HelloWorld.vue'
 // import ifelse from './components/ifelse.vue'
 // import List from './components/list.vue'
-import Methods from './components/methods.vue'
-import EventListeners from './components/eventListeners.vue'
-import Forms from './components/forms.vue'
+// import Methods from './components/methods.vue'
+// import EventListeners from './components/eventListeners.vue'
+// import Forms from './components/forms.vue'
+// import Modifiers from './components/modifiers.vue'
+// import Modifiers from './components/modifiers.vue'
+// import dynamicComp from './components/dynamicComponents.vue'
+// import Parent from './components/LifeCHooks/Parent.vue'
+// import PostList from './components/LifeCHooks/CallOnPageLoad.vue'
+// import TempRef from './components/LifeCHooks/templateRefs.vue'
+// import MyComp1 from './components/mixins/comp1.vue'
+// import MyComp2 from './components/mixins/comp2.vue'
+import MainAppVuetify from '../src/components/workwithvuetify/mainpage.vue'
 
 export default {
   name: 'App',
@@ -32,11 +57,21 @@ export default {
     // HelloWorld,
     // ifelse,
     // List,
-    Methods,
-    EventListeners,
-    Forms
+    // Methods,
+    // EventListeners,
+    // Forms,
+    // Modifiers,
+    // dynamicComp, **have some isssue
+    // Parent,
+    // PostList,
+    // TempRef,
+    // MyComp1,
+    // MyComp2,
+    MainAppVuetify,
 }
 }
+
+
 </script>
 
 <style>

@@ -7,12 +7,14 @@
   <form @submit="SubmitForm">
     <div>
       <label for="name"> Name </label>
-      <input type="text" id="name" v-model="formValues.name" />
+      <!-- trim removes any spaces before or after -->
+      <input type="text" id="name" v-model.trim="formValues.name" />
     </div>
 
     <div>
       <label for="age"> Age </label>
-      <input type="number" id="age" v-model="formValues.age" />
+      <!-- number ensures the data is number (55) not string ("55")  -->
+      <input type="number" id="age" v-model.number="formValues.age" />
     </div>
 
     <div>
